@@ -15,7 +15,7 @@ Empower individuals, communities, and organizations to collaborate effectively i
 
 ### ML Use Case
 
-*Predicting in-need areas of reforestation**
+**Predicting in-need areas of reforestation**
 
 ### Unet Model
 
