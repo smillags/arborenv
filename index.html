@@ -1,100 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forest Segmentation Project</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-        }
-        header {
-            background: #35424a;
-            color: #ffffff;
-            padding-top: 30px;
-            min-height: 70px;
-            border-bottom: #e8491d 3px solid;
-        }
-        header a {
-            color: #ffffff;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 16px;
-        }
-        header ul {
-            padding: 0;
-            list-style: none;
-        }
-        header ul li {
-            display: inline;
-            padding: 0 20px 0 20px;
-        }
-        header #branding {
-            float: left;
-        }
-        header #branding h1 {
-            margin: 0;
-        }
-        header nav {
-            float: right;
-            margin-top: 10px;
-        }
-        .content {
-            margin-top: 20px;
-        }
-        footer {
-            background: #35424a;
-            color: #ffffff;
-            text-align: center;
-            padding: 30px 0;
-            margin-top: 30px;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Forest Segmentation Project</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #e8491d 3px solid;
+}
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+header ul {
+    padding: 0;
+    list-style: none;
+}
+header ul li {
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+header #branding {
+    float: left;
+}
+header #branding h1 {
+    margin: 0;
+}
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+.content {
+    margin-top: 20px;
+}
+footer {
+    background: #35424a;
+    color: #ffffff;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 30px;
+}
+.file-list {
+    margin: 20px 0;
+    padding: 0;
+    list-style: none;
+}
+.file-list li {
+    margin: 10px 0;
+}
+.file-list a {
+    color: #35424a;
+    text-decoration: none;
+    font-size: 18px;
+}
+.file-list a:hover {
+    text-decoration: underline;
+}
+</style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div id="branding">
-                <h1>Forest Segmentation Project</h1>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Notebook</a></li>
-                    <li><a href="#">Dataset</a></li>
-                    <li><a href="#">Presentation</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <div class="container content">
-        <h2>Project Overview</h2>
-        <p>This project involves segmenting forest areas using machine learning models.</p>
-
-        <h3>Notebook</h3>
-        <p><a href="your-notebook.ipynb">Download the Jupyter Notebook</a></p>
-
-        <h3>Dataset</h3>
-        <p><a href="your-dataset.csv">Download the Dataset</a></p>
-
-        <h3>Presentation</h3>
-        <p><a href="your-presentation.pdf">Download the Presentation</a></p>
-
-        <h3>Additional Documents</h3>
-        <p><a href="other-document.pdf">Download Other Document</a></p>
+<header>
+<div class="container">
+    <div id="branding">
+        <h1>Forest Segmentation Project</h1>
     </div>
-    <footer>
-        <p>Forest Segmentation Project &copy; 2024</p>
-    </footer>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#notebooks">Notebooks</a></li>
+            <li><a href="#datasets">Datasets</a></li>
+            <li><a href="#models">Models</a></li>
+            <li><a href="#docs">Documents</a></li>
+        </ul>
+    </nav>
+</div>
+</header>
+<div class="container content">
+<section id="overview">
+    <h2>Project Overview</h2>
+    <p>This project involves segmenting forest areas using machine learning models.</p>
+</section>
+
+<section id="notebooks">
+    <h3>Jupyter Notebooks</h3>
+    <ul class="file-list">
+        <li><a href="arborenv.html">arborenv.html</a></li>
+        <li><a href="aroborenv_v2.ipynb">aroborenv_v2.ipynb</a></li>
+        <li><a href="f12.ipynb">f12.ipynb</a></li>
+    </ul>
+</section>
+
+<section id="datasets">
+    <h3>Datasets</h3>
+    <ul class="file-list">
+        <li><a href="tree.csv">tree.csv</a></li>
+    </ul>
+</section>
+
+<section id="models">
+    <h3>Trained Models</h3>
+    <ul class="file-list">
+        <li><a href="random_forest_model.pkl">random_forest_model.pkl</a></li>
+    </ul>
+</section>
+
+<section id="docs">
+    <h3>Additional Documents</h3>
+    <ul class="file-list">
+        <li><a href="README.md">README.md</a></li>
+    </ul>
+</section>
+</div>
+<footer>
+<p>Forest Segmentation Project &copy; 2024</p>
+</footer>
 </body>
 </html>
