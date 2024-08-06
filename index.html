@@ -1,76 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Model Showcase</title>
-  <style>
-      body { font-family: Arial, sans-serif; margin: 20px; color: #333; }
-      h1, h2, h3 { color: #0056b3; }
-      a { color: #0056b3; text-decoration: none; }
-      a:hover { text-decoration: underline; }
-      .container { max-width: 900px; margin: 0 auto; }
-      .section { margin-bottom: 30px; }
-      .model-card { border: 1px solid #ddd; padding: 15px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
-      .model-card h3 { margin-top: 0; }
-      .model-card a { display: inline-block; margin-top: 10px; }
-      .footer { margin-top: 40px; font-size: 0.9em; color: #777; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forest Segmentation Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #e8491d 3px solid;
+        }
+        header a {
+            color: #ffffff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header ul li {
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        .content {
+            margin-top: 20px;
+        }
+        footer {
+            background: #35424a;
+            color: #ffffff;
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 30px;
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-      <header>
-          <h1>Model Showcase</h1>
-          <p>Welcome to the Model Showcase site! Here you can find detailed information about the models I have developed, including how to use and download them.</p>
-      </header>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>Forest Segmentation Project</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Notebook</a></li>
+                    <li><a href="#">Dataset</a></li>
+                    <li><a href="#">Presentation</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container content">
+        <h2>Project Overview</h2>
+        <p>This project involves segmenting forest areas using machine learning models.</p>
 
-      <section class="section">
-          <h2>Models</h2>
-          <div class="model-card">
-              <h3>Random Forest Model</h3>
-              <p>This model is a Random Forest Classifier, which is an ensemble learning method that constructs multiple decision trees during training and outputs the mode of the classes (classification) or mean prediction (regression) of the individual trees.</p>
-              <a href="model_1.pkl" download>Download Random Forest Model</a>
-          </div>
+        <h3>Notebook</h3>
+        <p><a href="your-notebook.ipynb">Download the Jupyter Notebook</a></p>
 
-          <div class="model-card">
-              <h3>UNet Model</h3>
-              <p>The UNet model is a type of convolutional neural network designed for biomedical image segmentation. It consists of an encoder-decoder structure with skip connections that help in retaining spatial information.</p>
-              <a href="model_2.pkl" download>Download UNet Model</a>
-          </div>
-      </section>
+        <h3>Dataset</h3>
+        <p><a href="your-dataset.csv">Download the Dataset</a></p>
 
-      <section class="section">
-          <h2>Usage Instructions</h2>
-          <div class="model-card">
-              <h3>Using the Random Forest Model</h3>
-              <p>To use the Random Forest model, load it with the following code:</p>
-              <pre><code>import joblib
+        <h3>Presentation</h3>
+        <p><a href="your-presentation.pdf">Download the Presentation</a></p>
 
-# Load the model
-model = joblib.load('path_to_model_1.pkl')
-
-# Use the model for prediction
-predictions = model.predict(X_test)
-              </code></pre>
-          </div>
-
-          <div class="model-card">
-              <h3>Using the UNet Model</h3>
-              <p>To use the UNet model, load it with the following code:</p>
-              <pre><code>from tensorflow.keras.models import load_model
-
-# Load the model
-unet_model = load_model('path_to_model_2.pkl')
-
-# Use the model for predictions
-predictions = unet_model.predict(X_test)
-              </code></pre>
-          </div>
-      </section>
-
-      <footer class="footer">
-          <p>For more information, refer to the documentation in this repository. Feel free to contact me if you have any questions or need further assistance.</p>
-      </footer>
-  </div>
+        <h3>Additional Documents</h3>
+        <p><a href="other-document.pdf">Download Other Document</a></p>
+    </div>
+    <footer>
+        <p>Forest Segmentation Project &copy; 2024</p>
+    </footer>
 </body>
 </html>
